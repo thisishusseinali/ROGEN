@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.space {
+  width: 100vw;
+  height: 100vh;
+  background-color:black;
+}
+
+.planet {
+  position: absolute;
+  transform: translate(-50%, 50%);
+}
+
+.rocket {
+  position: absolute;
+  transition: all 126ms linear, transform 126ms ease-in-out;
+  transform-origin: center bottom;
+}
+
+.hud {
+  position: absolute;
+  left: 32px;
+  bottom: 24px;
+}
+
+.hud__item {
+  color: rgba(236, 239, 241, .9);
+  font-weight: 300;
+  margin: .5em 0;
+}
+
+.hud__item.hud__item_complete {
+  color: rgb(76, 175, 80);
+}
+
+.play-button {
+  transition: all 256ms ease;
+  position: absolute;
+  bottom: 50vh;
+  left: 50vw;
+  transform: translate(-50%, 50%);
+  width: 64px;
+  height: 64px;
+}
+
+.play-button.play-button_hidden {
+  opacity: 0;
+}
+
+.settings {
+  transition: all 256ms ease-in-out;
+  position: absolute;
+  bottom: 50vh;
+  left: 50vw;
+  border-radius: 2px;
+  width: 400px;
+  padding: 24px 16px;
+  background-color: rgb(66, 66, 66);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: translate(-50%, 50%);
+}
+
+.settings.settings_hidden {
+  bottom: -100%;
+}
+
+.settings__title {
+  margin-top: 0;
+  text-align: center;
+  color: white;
+}
+
+.settings__group {
+  display: flex;
+  margin: 8px 0;
+}
+
+.settings__group label {
+  color: rgba(236, 239, 241, .9);
+  flex: 3;
+  text-align: right;
+  margin-right: 8px;
+}
+
+.settings__group input {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  border-bottom: 2px solid rgb(33, 150, 243);
+  color: white;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 64px;
+}
+
+.settings__save {
+  position: relative;
+  left: 50%;
+  transition: all 225ms cubic-bezier(0.0, 0.0, 0.2, 1);
+  min-width: 64px;
+  height: 36px;
+  padding: 0 8px;
+  margin-top: 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+  transform: translateX(-50%);
+  background-color: rgb(33, 150, 243);
+  align-self: flex-end;
+  width: 100%;
+}
+
+.settings__save:hover,
+.settings__save:active {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+footer {
+  position: absolute;
+  right: 32px;
+  bottom: 24px;
+  color: white;
+  font-weight: 300;
+  margin: .5em 0;
+}
