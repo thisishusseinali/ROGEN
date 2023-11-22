@@ -1,5 +1,10 @@
-# RoGen
-The RoGen project utilizes a genetic algorithm to simulate rockets navigating towards a specific target. These rockets operate in a two-dimensional space, adhering to physics equations for movement control. Through multiple generations, the genetic algorithm evolves a population of rockets. Fit individuals are selected for breeding, passing on their genetic information to the next generation. The project encompasses implementing essential components: a rocket physics engine, target detection system, genetic algorithm, and simulation visualization. The overarching objective is to develop a population of rockets capable of precisely reaching the designated target.
+# ROGEN
+
+<div align="center">
+  <img src="https://github.com/thisishusseinali/ROGEN/blob/main/assets/images/ROGEN.svg" width="100%" alt="CodeCube Banner">
+</div>
+
+Welcome to ROGEN – 🌐 A website utilizing genetic algorithms to simulate rockets navigating towards a specific target in space. 🚀🧬✨
 
 ## Table of Contents
 
