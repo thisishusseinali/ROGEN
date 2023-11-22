@@ -85,7 +85,7 @@ class Rocket {
 
     // Create a DOM element for the rocket.
     this.element = document.createElement('img');
-    this.element.src = 'assets/rocket.svg';
+    this.element.src = 'assets/images/rocket.svg';
     this.element.classList.add('rocket');
 
     // Set the initial position of the rocket.
@@ -317,7 +317,7 @@ class Planet {
     if (src) {
       this.src = src;
     } else {
-      this.src = 'mars.svg'
+      this.src = 'assets/images/mars.svg'
     }
   }
 
@@ -325,7 +325,7 @@ class Planet {
 
     // Create the plannet element.
     const element = document.createElement('img');
-    element.src = `assets/${this.src}`;
+    element.src = `${this.src}`;
     element.classList.add('planet');
 
     // Set the correct plannet size.
@@ -394,7 +394,7 @@ class HUD {
     hud.appendChild(mutationProbability);
 
     const playButton = document.createElement('img');
-    playButton.src = `assets/play-button.svg`;
+    playButton.src = `assets/images/play-button.svg`;
     playButton.classList.add('play-button');
 
     space.appendChild(hud);
@@ -441,7 +441,7 @@ class Mission {
     this.crossoverProbability = crossoverProbability;
 
     this.target = target;
-    this.earth = new Planet(window.innerWidth / 2, 0, 'earth.svg');
+    this.earth = new Planet(window.innerWidth / 2, 0, 'assets/images/earth.svg');
     this.asteroids = [];
 
     this.populationSize = populationSize;
@@ -521,7 +521,7 @@ class Mission {
   }
 
   addAsteroid(x, y) {
-    this.asteroids.push(new Planet(x, y, 'asteroid.svg'));
+    this.asteroids.push(new Planet(x, y, 'assets/images/asteroid.svg'));
 
     for (let i = 0; i < this.asteroids.length; i++) {
       this.asteroids[i].render();
